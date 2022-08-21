@@ -18,20 +18,29 @@
 <body>
     <div class="row">
         <div class="col-8">
-        <form class="form-inline">
-            <div class="form-group mb-2">
-              <label for="staticEmail2" class="sr-only">City</label>
-            </div>
+            <h1>Search for City</h1>
+        <form class="form-inline searchEdit">
             <div class="form-group mx-sm-3 mb-2">
-              <label for="inputPassword2" class="sr-only">City Name</label>
-              <input class="formCity" placeholder="City Name">
+              <label class="form-label">City Name</label>
+              <input input type="text" class="formCity" id="cityType" placeholder="City Name">
             </div>
-            <button type="submit" class="btn btn-primary mb-2">Search</button>
+            <button input type="reset" value="Reset" type="button" class="btn btn-primary mb-2" id="searchBtn">Search</button>
         </form>
+        <h2>_________________________</h2>
+        <br>
+        <div class="card" style="width: 18rem;">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item prev1">An item</li>
+            </ul>
+          </div>
     </div>
         <div class="col-4">col-8</div>
+        <section id="fiveDay"></section>
       </div>
-    
+      <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"></script>
     <script src="./assets/js/script.js"></script>
 </body>
 </html>
