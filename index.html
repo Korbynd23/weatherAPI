@@ -11,15 +11,15 @@
 <header>
     <div class="jumbotron jumbotron-fluid jumboEdit">
         <div class="container">
-          <h1 class="display-4">City Search Weather Forecast</h1>
+          <h1 class="display-4 jumboTextEdit">Weather Forecast</h1>
         </div>
       </div>
 </header>
 <body>
     <div class="row">
-        <div class="col-4">
-            <h1>Search for City</h1>
-        <form class="form-inline searchEdit">
+        <div class="col-3">
+            <h1 class="searchH">Search for City</h1>
+        <form class="form-inline searchEdit editForm">
             <div class="form-group mx-sm-3 mb-2">
               <label class="form-label">City Name</label>
               <input input type="text" class="formCity" id="cityType" placeholder="City Name">
@@ -28,16 +28,14 @@
         </form>
         <h2>_________________________</h2>
         <br>
-        <div class="card" style="width: 18rem;">
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item prev1">An item</li>
-            </ul>
-          </div>
+        </div>
+      <div id="currentDay" class="col-7 nowWeather"></div>
     </div>
-        <div id="currentDay" class="col-8 "></div>
-        <div id="fiveDay"></div>
-      </div>
-      <script
+  <div class="row">
+    <div id="prevCity" class="col-3">PREV CITY</div>
+    <div id="fiveDay" class="col-7 cardEdit"></div>
+  </div>
+  <script
       src="https://code.jquery.com/jquery-3.6.0.min.js"
        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
       crossorigin="anonymous"></script>

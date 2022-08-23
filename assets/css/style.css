@@ -1,6 +1,14 @@
 .jumboEdit {
-    background-color: royalblue;
+    background-color: rgb(65, 105, 225, 0.65);
     height: 16vh;
+}
+
+.jumboTextEdit {
+    font-weight: bold;
+}
+
+.searchH {
+    font-size: 20px;
 }
 
 .formCity {
@@ -10,5 +18,19 @@
 
 .searchEdit {
     margin-top: 30px;
+}
+
+.nowWeather {
+    border: 2px rgb(41, 41, 44, 0.5) outset;
+    margin: 0px 0px 32px 65px;
+    background-color: rgb(255, 227, 194, 0.5);
+    box-shadow: 5px 10px 8px #888888;
+}
+
+.cardEdit {
+    display: flex;
+    flex-direction: row;
+    margin-left: 70px;
+
 }
 
