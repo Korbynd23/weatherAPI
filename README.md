@@ -27,6 +27,8 @@ none
 
 ## Instructions/How to use
 
+Link to deployed application: https://korbynd23.github.io/weatherAPI/
+
 Type your desired city into the search bar and hit search. The page will generate todays weather and the five day forecast for your desired city.
 
 ## License
