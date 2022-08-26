@@ -16,7 +16,7 @@
 
 
 ## Description
-This applications purpose is to modulate an easy do it yourself readMe.md creator.
+This applications purpose is to take in users input and provide them with the weather in the city they searched for. Also creates button for previously searched cities and puts them into buttons.
 
 
 ## Install Instructions
@@ -27,7 +27,7 @@ none
 
 ## Instructions/How to use
 
-
+Type your desired city into the search bar and hit search. The page will generate todays weather and the five day forecast for your desired city.
 
 ## License
 Permission to use this application is granted under the MIT license. https://choosealicense.com/licenses/mit/
