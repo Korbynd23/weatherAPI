@@ -1,5 +1,5 @@
 .jumboEdit {
-    background-color: rgb(65, 105, 225, 0.65);
+    background-color: rgba(253, 246, 139, 0.65);
     height: 16vh;
 }
 
@@ -31,6 +31,13 @@
     display: flex;
     flex-direction: row;
     margin-left: 70px;
-
 }
 
+#searchBtn {
+    padding-left: 15px;
+    margin-left: 163px;
+}
+
+.fiveCardShadow {
+    box-shadow: 0px 4px 8px rgba(66, 41, 17, 0.65);
+}
