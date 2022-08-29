@@ -14,7 +14,7 @@ if(localStorage.getItem('city')) {
 function getCityApi(cityInput, element) {
     let param = cityInput || element
     localStorage.setItem("city", cityInput)
-    let requestUrl = `http://api.openweathermap.org/geo/1.0/direct?q=${param}&limit=1&appid=01c6acda042379425ee30a68789c29c5`
+    let requestUrl = `https://api.openweathermap.org/geo/1.0/direct?q=${param}&limit=1&appid=01c6acda042379425ee30a68789c29c5`
 
 
     fetch(requestUrl)
@@ -70,7 +70,7 @@ function displayForecast(forcastData) {
         
         listItemDate.textContent = bestDate
         listItemWind.textContent = forcastData[i].wind_speed + " mph";
-        listItemHum.textContent = forcastData[i].humidity + "%";
+        listItemHum.textContent = "Humidity: " + forcastData[i].humidity + "%";
         listItemTemp.textContent = forcastData[i].temp.day + "°F";
         listIcon.src = `https://openweathermap.org/img/w/${forcastData[i].weather[0].icon}.png`
         
@@ -98,7 +98,7 @@ function displayCurrent(data, dateT, param) {
     tempEl.innerHTML = data.current.temp + "°F";
     windEl.innerHTML = data.current.wind_speed + " mph";
     dateEl.innerHTML = param + " " + dateT.toLocaleDateString("en-US");
-    humEl.innerHTML = data.current.humidity + "%";
+    humEl.innerHTML = "Humidity: " + data.current.humidity + "%";
     uvEl.innerHTML = data.current.uvi;
     iconEl.src = `https://openweathermap.org/img/w/${data.current.weather[0].icon}.png`
 
