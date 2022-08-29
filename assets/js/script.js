@@ -99,7 +99,7 @@ function displayCurrent(data, dateT, param) {
     windEl.innerHTML = data.current.wind_speed + " mph";
     dateEl.innerHTML = param + " " + dateT.toLocaleDateString("en-US");
     humEl.innerHTML = "Humidity: " + data.current.humidity + "%";
-    uvEl.innerHTML = data.current.uvi;
+    uvEl.innerHTML = "UV Index: " + data.current.uvi;
     iconEl.src = `https://openweathermap.org/img/w/${data.current.weather[0].icon}.png`
 
     dayContainer.append(dateEl, iconEl, tempEl, humEl, windEl, uvEl);
